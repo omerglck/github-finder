@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Github Finder</title>
+    <link rel="icon" href="image/github.svg" type="image/x-icon" />
     <!-- bs file -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
     />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-dark text-bg-dark">
+  <body class="bg-dark text-bg-dark" id="body">
     <!-- top-area -->
     <header class="navbar navbar-dark mt-3 mb-3">
       <div class="container">
-        <a href="/" class="navbar-brand">Github Finder</a>
-        <button class="btn btn-light">Açık Mod</button>
+        <p class="navbar-brand" id="title">Github Finder</p>
+        <button class="btn btn-light" id="btn-dark">Light Mode</button>
       </div>
     </header>
+    <!-- notification -->
+    <div class="container" id="warning"></div>
 
     <!-- form-area -->
     <div class="container">
@@ -26,17 +31,16 @@
         <p>Kullanıcı bilgilerine erişmek için kullanıcı adı giriniz.</p>
         <div class="d-flex gap-3">
           <input type="text" class="form-control" id="search-input" />
-          <button class="btn btn-primary btn-lg" id="search-btn">Search</button>
+          <button class="btn btn-primary btn-lg" id="search-btn">Ara</button>
+          <button class="btn btn-danger btn-lg" id="btnClear">Temizle</button>
         </div>
       </div>
     </div>
 
     <!-- user-info -->
     <div class="container p-4" id="profile"></div>
-
     <!-- user projects area -->
     <div id="repos" class="container p-4"></div>
-
     <!-- js file -->
     <script src="app.js" type="module"></script>
   </body>

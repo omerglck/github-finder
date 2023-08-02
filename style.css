@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+  #profile {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #profileButton {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}

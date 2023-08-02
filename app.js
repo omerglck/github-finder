@@ -22,9 +22,10 @@ function getInput() {
       .then((res) => {
         // eğer kullanıcı bulunamadıysa
         if (res.data.message === "Not Found") {
-          alert("kullanıcı bulunamadı");
+          ui.showAlert("Aradığınız kullanıcı bulunamadı", "alert alert-danger");
         } else {
           //kullanıcı bulunduysa
+          ui.showAlert("Kullanıcı bulundu", "alert alert-success");
           ui.renderProfile(res.data);
           ui.renderProjects(res.repos);
         }
@@ -32,6 +33,15 @@ function getInput() {
       .catch((err) => console.log(err));
     return;
   }
-  //buraya boş olduğu durumda bildirim alanı eklenecek
-  alert("Boş olamaz");
+  ui.showAlert(
+    "Form alanını doldurunuz!",
+    "alert bg-warning fw-bold text-dark"
+  );
 }
+//todo Enter tuşu ile arama
+document.addEventListener("keydown", (e) => {
+  //   console.log("Tuş:", e.key);
+  if (e.key === "Enter") {
+    getInput();
+  }
+});
