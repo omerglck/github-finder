@@ -1,6 +1,6 @@
 # Github Finder Project
 
-- GitHub Finder projesi, kullanıcı tarafından girilen bir GitHub kullanıcı adını alıp, GitHub API'sına istek yaparak o kullanıcının GitHub profil bilgilerini ve repolarını getirmektir. Böylece kullanıcı, istediği GitHub kullanıcısının profiline ve repolarına kolayca erişebilir.
+- GitHub Finder projesi, kullanıcı tarafından girilen bir GitHub kullanıcı adını alıp, GitHub API'sına istek atarak o kullanıcının GitHub profil bilgilerini ve repolarını getirmektedir. Böylece kullanıcı, istediği GitHub kullanıcısının profiline ve repolarına kolayca erişebilir.
 
 ## Proje Özellikleri
 
