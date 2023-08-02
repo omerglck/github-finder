@@ -18,6 +18,10 @@
 
 - JavaScript
 
+## Demo
+
+<a href="https://githubfinder10.netlify.app/">Canlı Önizleme</a>
+
 ## Gif
 
 <img src="screen.gif">
